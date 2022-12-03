@@ -1,7 +1,7 @@
 # docker-tips 🐋
 
 ## Description 📝
-A repository for Tips, Tricks, and Notes on Docker. I will try to keep it up-to-date with the [Official Docker Documentation](https://docs.docker.com/), and always recommend industry standards as set out by the docs.
+A repository for Tips, Tricks, and Notes on Docker in a Q&A format. I will try to keep it up-to-date with the [Official Docker Documentation](https://docs.docker.com/), and always recommend industry standards as set out by the docs.
 
 This project was built using [LaTeX](https://latex-project.org/), a high-level, descriptive markup language.
 
