@@ -32,10 +32,20 @@ Make sure your machine has the following already set up and ready to go:
 pip install Pygments
 ```
 
-
 ### Up and running 🏃 
 
 1. Clone the repository. The easiest option is using the following git command in your terminal/command prompt:
 ```shell
 git clone https://github.com/AM-ops/docker-tips.git
 ```
+
+2. Compile the `main.tex` file using the TeX typesetting engine [XeTeX](http://xetex.sourceforge.net/). This can be done using the following command (run twice if table of contents not visible):
+
+```shell
+xelatex -synctex=1 -interaction=nonstopmode -shell-escape main.tex
+```
+
+Note the flag(s) utilised in the command above. Additionally, a PDF file titled `main.pdf` will automatically be generated.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
