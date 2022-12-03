@@ -118,6 +118,46 @@ The Compose file is a YAML file that defines services, networks, volumes, config
 
 %------------------------------------------------
 
+\question{\texttt{ADD} or \texttt{COPY}}
+
+Although both instructions function in a similar manner, the \texttt{COPY} command is preferred. \texttt{COPY} is used to copy local files into a container while \texttt{ADD} has additional functionality such as remote URL support, and local tar extraction. 
+
+%------------------------------------------------
+
+\question{Decrease the size of a Docker image when using node.js}
+
+Remember to clean up any residual caches after installing the relevant packages needed in your project. This is shown in an example \texttt{Dockerfile} below.
+\pagebreak
+\begin{minted}
+[
+frame=lines,
+framesep=2mm,
+baselinestretch=1.2,
+bgcolor=codeBackground!30,
+fontsize=\footnotesize,
+]
+{Dockerfile}
+FROM node:latest
+
+EXPOSE 3000
+
+WORKDIR /usr/src/app
+
+COPY . .
+
+RUN npm install && npm cache clean --force
+
+CMD [ "node", "./bin/www" ]
+\end{minted}
+
+%------------------------------------------------
+
+\question{\texttt{npm} or \texttt{node} when using \texttt{CMD} instruction in a \texttt{Dockerfile}}
+
+It is preferable to use \texttt{node} when using the \texttt{CMD} instruction in your \texttt{Dockerfile}. This is due to the following:
+
+%------------------------------------------------
+
 %----------------------------------------------------------------------------------------
 
 \end{document}
