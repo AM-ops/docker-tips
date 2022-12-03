@@ -47,5 +47,5 @@ xelatex -synctex=1 -interaction=nonstopmode -shell-escape main.tex
 
 Note the flag(s) utilised in the command above. Additionally, a PDF file titled `main.pdf` will automatically be generated.
 
-## License
+## License ©️
 This project is licensed under the [MIT License](LICENSE).
